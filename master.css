@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#logo {
+    height: 50px;
+    width: 9%;
+    border-radius: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+.Hero_Section1 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.Hero_Section1 img {
+    width: 50%;
+    height: auto;
+}
+
+.Hero_Section1 iframe {
+    width: 50%;
+    height: 300px;
+}
+
+.News {
+    width: 1526px;
+    height: 400px;
+}
+
+#news1 {
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+
+#news2 {
+    width: 50%;
+    height: 50%;
+    float: right;
+}
+
+.iconsLeagues {
+    background-color: #EEE;
+}
+
+.league-card1, .league-card2, .league-card3, .league-card4 {
+    width: 25%;
+    float: left;
+}
+
+.ad-small {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    font-family: Arial, sans-serif;
+    background: #fff;
+    position: relative;
+    margin: 12px auto;
+}
+
+.ad-small img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.ad-small .content {
+    padding: 8px;
+}
+
+.ad-small h4 {
+    font-size: 14px;
+    margin: 0 0 4px;
+    color: #111;
+}
+
+.ad-small p {
+    font-size: 12px;
+    margin: 0 0 6px;
+    color: #555;
+}
+
+.ad-small a {
+    display: inline-block;
+    padding: 6px 10px;
+    background: #0ea5e9;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.ad-small a:hover {
+    background: #0284c7;
+}
+
+.site-footer {
+    background: #0f172a;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.site-footer .social-links {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.site-footer .social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #1e293b;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.site-footer .social-links a:hover {
+    background: #0ea5e9;
+}
+
+.site-footer p {
+    font-size: 13px;
+    margin-top: 12px;
+    color: #94a3b8;
+}
+@media (max-width: 768px) {
+    .Hero_Section1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .Hero_Section1 img, .Hero_Section1 iframe {
+        width: 100%;
+        height: auto;
+    }
+    .News {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    #news1, #news2 {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .iconsLeagues {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .league-card1, .league-card2, .league-card3, .league-card4 {
+        width: 45%;
+        float: none;
+        margin-bottom: 15px;
+    }
+    .ad-small {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
